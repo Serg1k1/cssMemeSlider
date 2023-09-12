@@ -14,8 +14,8 @@ body {
     display: flex;
     width: 100%;
 }
-.image {
-    height: 400px;
+.images img {
+    height: auto;
     width: 100%;
     transition: all 0.15s ease;
 }
@@ -25,14 +25,62 @@ body {
 .dots {
     display: flex;
     justify-content: end;
-    margin: 10px;
+    margin: 5px;
 }
 .dots label {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: solid 2px #fff;
     cursor: pointer;
     transition: all 0.15s ease;
     margin: 5px;
 } 
+.dots label:hover {
+    background: #fff;
+}
+
+.description {
+    
+    display: flex;
+    width: 100%;
+}
+
+.description p {
+    color: #fff; 
+    margin: 5px;
+}
+
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+
+
+
+#img1:checked ~ .p1 {
+    margin-right: 0px;
+}
+
+#img2:checked ~ .p2 {
+    margin-right: -30px;
+}
+
+#img3:checked ~ .p3 {
+    margin-right: -60px;
+}
+
+#img4:checked ~ .p4 {
+    margin-right: -90px;
+}
