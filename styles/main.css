@@ -4,8 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(25, 12, 41);
-    padding: 0 1rem;
-    font-size: 15px;
+    padding: 0 0.9375rem;
     font-family: 'Poppins', sans-serif;
 }
 .main__input {
@@ -14,10 +13,10 @@ body {
 .slider {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.875rem;
     position: relative;
-    width: 46.666rem;
-    height: 33.333rem;
+    width: 43.75rem;
+    height: 31.25rem;
     overflow: hidden;
 }
 .wrapper {
@@ -29,13 +28,13 @@ body {
 }
 .slide {
     width: 20%;
-    border-radius: 0.533rem;
+    border-radius: 0.5rem;
     overflow: hidden;
 }
 .slide img {
-    width: 53.333rem;
+    width: 50rem;
     max-width: 100%;
-    height: 29rem;
+    height: 27.1875rem;
 }
 
 .footer-slider {
@@ -44,16 +43,16 @@ body {
 }
 
 .footer-slider__description {
-    width: 13.333rem;
+    width: 12.5rem;
     display: flex;
     white-space: nowrap;
     flex-direction: row;
     overflow: hidden;
-    height: 1.33rem;
+    height: 1.25rem;
 }
 
 .p1 {
-    flex: 0 0 13.333rem;
+    flex: 0 0 12.5rem;
     overflow: hidden;
     color: #fff; 
     transition: all 0.3s ease;
@@ -65,10 +64,10 @@ body {
 }
 
 .dots label {
-    height: 2.333rem;
-    width: 2.333rem;  
+    height: 2.1875rem;
+    width: 2.1875rem;  
     cursor: pointer;
-    gap: 0.666rem;
+    gap: 0.625rem;
 } 
 
 .dot {
@@ -79,11 +78,11 @@ body {
 }
 
 .dot span {
-    width: 1.33rem;
-    height: 1.33rem;
+    width: 1.25rem;
+    height: 1.25rem;
     
     border-radius: 50%;
-    border: solid 0.133rem #fff;
+    border: solid 0.125rem #fff;
     
     transition: all 0.15s ease;    
 }
@@ -114,15 +113,15 @@ body {
 }
 
 #img2:checked ~ .slider .slider__footer .footer-slider__description .p1{
-    transform: translateX(-13.333rem);
+    transform: translateX(-12.5rem);
 }
 
 #img3:checked ~ .slider .slider__footer .footer-slider__description .p1{
-    transform: translateX(-26.666rem);
+    transform: translateX(-25rem);
 }
 
 #img4:checked ~ .slider .slider__footer .footer-slider__description .p1{
-    transform: translateX(-40rem);
+    transform: translateX(-37.5rem);
 }
 
 /* ================== */
@@ -181,14 +180,14 @@ body {
 
 @media (max-width: 600px) {
     .slider {
-        height: 30rem;
+        height: 32.5rem;
     }
     .slide img {
-        height: 23.333rem;
+        height: 21.875rem;
     }
     .footer-slider {
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.9375rem;
     }
     .dots {
         order: 0;
@@ -203,9 +202,9 @@ body {
 
 @media (max-width: 460px) {
     .slider {
-        height: 23.533rem;
+        height: 18.75rem;
     }
     .slide img {
-        height: 16.666rem;
+        height: 17.5rem;
     }
 }
